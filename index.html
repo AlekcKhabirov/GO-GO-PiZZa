@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO GO PiZZa -заказать пиццу</title>
+    <link rel="stylesheet" href="mycss/normalize.css">
+    <link rel="stylesheet" href="mycss/fonts.css">
+    <link rel="stylesheet" href="./mycss/mystyle.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+           <img src="./images/logo.svg" alt="логотип пиццарни" class="header__logo">
+            <button class="header__track" type="button" aria-label="открыть корзину">
+                <img src="./images/bag.svg" alt="корзина заказов" class="header__bag">                       
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">
+                    Лучшая пицца<br />в&nbsp;городе
+                </h1>
+                <p class="hero__delevery">
+                    Доставим менее чем за&nbsp;час
+                </p>
+                <button class="hero__button" type="menu">
+                    Заказать
+                </button>
+            </div>
+        </section>
+
+        <section class="toppings ">
+            <div class="container">
+
+                <h2 class="toppings__title">Выбрать топпинг:</h2>
+  
+                <ul class="toppings__list">                                                        
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings" name="Твердый сыр" checked />
+                        <label for="toppings">Твердый сыр</label>
+                    </li>
+
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings" name="Моцарелла" checked />
+                        <label for="toppings">Моцарелла</label>
+                    </li>
+
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings" name="Сыр с плесенью" checked />
+                        <label for="toppings">Сыр с плесенью</label>
+                    </li>
+
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings" name="Пепперони" checked />
+                        <label for="toppings">Пепперони</label>
+                    </li>
+
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings" name="Ветчина" checked />
+                        <label for="toppings">Ветчина</label>
+                    </li>
+
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings" name="Курица" checked />
+                        <label for="toppings">Курица</label>
+                    </li>
+
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings" name="Креветки" checked />                                                    
+                        <label for="toppings">Креветки</label>
+                    </li>
+
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings" name="Помидор" checked />
+                        <label for="toppings">Помидор</label>
+                    </li>
+
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings" name="Болгарский перец" checked />
+                        <label for="toppings">Болгарский перец</label>
+                    </li>
+
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings" name="Ананас" checked />
+                        <label for="toppings">Ананас</label>
+                    </li>
+
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings"Лук" checked />
+                        <label for="toppings">Лук</label>
+                    </li>
+
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings" name="Грибы" checked />
+                        <label for="toppings">Грибы</label>
+                    </li>
+
+                    <li class="toppings__item">
+                        <input type="checkbox" id="toppings" name="" checked />
+                        <label for="toppings">Помидор</label>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        
+       
+        <section class="pizza__container">
+            
+            <div class="container">
+                <h2 class="pizza__title">Пицца</h2>
+                <div class="pizza__table pizza">
+                <article class="pizza__card">
+                    <img src="./images/cheesee-pizza-only-cheese-view-from-above-without-.png" alt="Маргарита" class="pizza__card-image">
+                    
+                    <h3 class="pizza__card-title">Маргарита</h3>
+
+                    <div class="pizza__card-description">
+                        <span class="pizza__card-price">480р.</span>
+
+                        <span class="pizza__card-line">/</span>
+
+                        <span class="pizza__card-width">25см.</span>
+                    </div>
+                    
+                    <button class="pizza__card-button" type="button" name="Выбрать">Выбрать</button>
+                </article>
+
+                <article class="pizza__card">
+                    <img src="./images/cheesee-pizza-only-cheese-view-from-above-without-.png" alt="Пепперони" class="pizza__card-image">
+                    
+                    <h3 class="pizza__card-title">Пепперони</h3>
+
+                    <div class="pizza__card-description">
+                        <span class="pizza__card-price">550р.</span>
+
+                        <span class="pizza__card-line">/</span>
+
+                        <span class="pizza__card-width">25см.</span>
+                    </div>
+                    
+                    <button class="pizza__card-button" type="button" name="Выбрать">Выбрать</button>
+                </article> 
+       
+        
+                                                                
+                <article class="pizza__card">
+                    <img src="./images/cheesee-pizza-only-cheese-view-from-above-without-.png" alt="Морская" class="pizza__card-image">
+                    
+                    <h3 class="pizza__card-title">Морская</h3>
+
+                    <div class="pizza__card-description">
+                        <span class="pizza__card-price">590р.</span>
+
+                        <span class="pizza__card-line">/</span>
+
+                        <span class="pizza__card-width">25см.</span>
+                    </div>
+                    
+                    <button class="pizza__card-button" type="button" name="Выбрать">Выбрать</button>
+                </article>
+
+                <article class="pizza__card">
+                    <img src="./images/cheesee-pizza-only-cheese-view-from-above-without-.png" alt=" Четыре сыра" class="pizza__card-image">
+                    
+                    <h3 class="pizza__card-title"> Четыре сыра</h3>
+
+                    <div class="pizza__card-description">
+                        <span class="pizza__card-price">520р.</span>
+
+                        <span class="pizza__card-line">/</span>
+
+                        <span class="pizza__card-width">25см.</span>
+                    </div>
+                    
+                    <button class="pizza__card-button" type="button" name="Выбрать">Выбрать</button>
+                </article>
+
+                <article class="pizza__card">
+                    <img src="./images/cheesee-pizza-only-cheese-view-from-above-without-.png" alt="Капричиоза" class="pizza__card-image">
+                    
+                    <h3 class="pizza__card-title">Капричиоза</h3>
+
+                    <div class="pizza__card-description">
+                        <span class="pizza__card-price">530р.</span>
+
+                        <span class="pizza__card-line">/</span>
+
+                        <span class="pizza__card-width">25см.</span>
+                    </div>
+                    
+                    <button class="pizza__card-button" type="button" name="Выбрать">Выбрать</button>
+                </article>
+
+                <article class="pizza__card">
+                    <img src="./images/cheesee-pizza-only-cheese-view-from-above-without-.png" alt="С грибами" class="pizza__card-image">
+                    
+                    <h3 class="pizza__card-title">С грибами </h3>
+                    <div class="pizza__card-description">
+                        <span class="pizza__card-price">490р.</span>
+
+                        <span class="pizza__card-line">/</span>
+
+                        <span class="pizza__card-width">25см.</span>
+                    </div>
+                    
+                    <button class="pizza__card-button" type="button" name="Выбрать">Выбрать</button>
+                </article>
+
+                <article class="pizza__card">
+                    <img src="./images/cheesee-pizza-only-cheese-view-from-above-without-.png" alt="С ветчиной" class="pizza__card-image">
+                    
+                    <h3 class="pizza__card-title">С ветчиной</h3>
+
+                    <div class="pizza__card-description">
+                        <span class="pizza__card-price">500р.</span>
+
+                        <span class="pizza__card-line">/</span>
+
+                        <span class="pizza__card-width">25см.</span>                                                    
+                    </div>
+                    
+                    <button class="pizza__card-button" type="button" name="Выбрать">Выбрать</button>
+                </article>
+
+                <article class="pizza__card">
+                    <img src="./images/cheesee-pizza-only-cheese-view-from-above-without-.png" alt="С курицей террияки" class="pizza__card-image">
+                    
+                    <h3 class="pizza__card-title">С курицей террияки</h3>
+
+                    <div class="pizza__card-description">
+                        <span class="pizza__card-price">560р.</span>
+
+                        <span class="pizza__card-line">/</span>
+
+                        <span class="pizza__card-width">25см.</span>
+                    </div>
+                    
+                    <button class="pizza__card-button" type="button" name="Выбрать">Выбрать</button>
+              </article>
+
+                <article class="pizza__card">
+                    <img src="./images/cheesee-pizza-only-cheese-view-from-above-without-.png" alt="Гавайская" class="pizza__card-image">
+                    
+                    <h3 class="pizza__card-title">Гавайская</h3>
+
+                    <div class="pizza__card-description">
+                        <span class="pizza__card-price">530р.</span>
+
+                        <span class="pizza__card-line">/</span>
+
+                        <span class="pizza__card-width">25см.</span>
+                    </div>
+
+                    <button class="pizza__card-button" type="button" name="Выбрать">Выбрать</button>                    
+                </article>
+
+                <article class="pizza__card">
+                    <img src="./images/cheesee-pizza-only-cheese-view-from-above-without-.png" alt="Неаполитана" class="pizza__card-image">
+                    
+                    <h3 class="pizza__card-title">Неаполитана</h3>
+
+                    <div class="pizza__card-description">
+                        <span class="pizza__card-price">550р.</span>
+
+                        <span class="pizza__card-line">/</span>
+
+                        <span class="pizza__card-width">25см.</span>Неаполитана
+                    </div>
+                    
+                    <button class="pizza__card-button" type="button" name="Выбрать">Выбрать</button>
+                </article>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer footer__container">
+        <div class="footer__rectangle"></div>
+
+        <div class="container footer__info">
+            
+            <img src="./images/orang-logo.svg" alt="оранжевый логотип пиццарни" class="footer__info-logo">
+
+            <p class="footer__info-copiraiter">©go go pizza, 2024</p>
+
+            <ul class="footer__info-list">
+                <li class="footer__info-item_disigner"><a href="#" target="_blank" rel="noopener">Designer: Anastasia Ilina</a></li>
+                     
+                <li class="footer__info-item_developer"><a href="#" target="_blank" rel="noopener">Developer:Alekc</a></li>    
+            </ul>
+        </div>
+    </footer>   
+</body>
+</html>

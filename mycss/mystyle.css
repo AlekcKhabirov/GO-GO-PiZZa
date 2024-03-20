@@ -1,0 +1,34 @@
+.container{
+    max-width: 1300px;
+}
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+.toppings__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px ;
+}
+.pizza__table{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+.footer__container{
+    align-self: flex-end;
+}
+.footer__rectangle{
+    height: 2px;
+    background-color: beige;
+}
+.footer__info-logo{
+margin: 65px auto 65px;
+}
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
