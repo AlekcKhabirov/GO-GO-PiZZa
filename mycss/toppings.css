@@ -1,0 +1,42 @@
+.toppings{
+    padding: 24px;
+}
+
+.toppings__title{
+    position: fixed;
+    transform: scale(0);
+}
+
+.toppings__button{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+    color:var(--dark);
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+ .toppings__arrow{
+   transform: 0.3s easy;
+ }
+
+ .toppings__button_active .toppings__arrow{
+    transform: scaleY(-1);
+ }
+
+ .toppings__list{
+    display: none;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-height: 0;
+    overflow: hidden;
+    transform: max-height 0.3s ease;
+ }
+ .toppings__list_show{
+    display: flex;
+ }
+
+ .toppings__checkbox{
+    position: absolute;
+    appearance: none;
+ }

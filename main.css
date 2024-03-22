@@ -1,0 +1,9 @@
+@import './mycss/normalize.css';
+@import './mycss/fonts.css';
+@import './mycss/style.css';
+@import './mycss/header.css';
+@import './mycss/hero.css';
+@import './mycss/toppings.css';
+@import './mycss/card.css';
+@import './mycss/footer.css';
+@import './mycss/pizza.css';

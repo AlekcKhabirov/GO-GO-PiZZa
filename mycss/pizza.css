@@ -1,0 +1,11 @@
+.pizza__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.pizza__title{
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--dark);
+}

@@ -1,0 +1,128 @@
+:root{
+    --white: #fff;
+	--beige: #c1ab91;
+	--dark: #2c2826;
+	--orange: #ff8a00;
+	--light: #fbf3e8;
+}
+
+html {
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: Nunito, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+    color: var(--dark);
+    background-color:var(--light);
+  }
+  
+  /*body {
+     Задает базовую позицию для элементов внутри тела документа. 
+    position: relative;
+  
+    /* Запрещает горизонтальную прокрутку страницы.                                               
+    overflow-x: hidden;
+  
+    /* Задает минимальную ширину для тела документа, чтобы контент не сжимался слишком сильно на узких экранах. 
+    min-width: 320px;
+  
+    /* Задает минимальную высоту для тела документа, чтобы оно занимало всю видимую высоту экрана. 
+    min-height: 100vh;
+  
+    /* Задает шрифт для текста на странице. 
+    font-family: Arial, sans-serif;
+  
+    /* Сглаживает шрифт для улучшения читаемости на экранах с высоким разрешением. 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Оптимизирует качество отображения текста для лучшей читаемости. 
+    text-rendering: optimizeLegibility;
+  
+    /* Устанавливает цвет выделения при нажатии на элементы на странице. 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+  
+    /* Задает базовый размер шрифта для текста на странице. 
+    font-size: 16px;
+  
+     Задает цвет текста на странице. 
+    color: #000;
+  
+    /* Задает цвет фона для тела документа. 
+    background-color: #fff;
+  }*/
+  
+  img,
+  svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  svg {
+    max-height: 100%;
+  }
+  
+  button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1,
+   h2,
+    h3,
+    p,
+    figure,
+    fieldset {
+    margin: 0;
+  }
+  
+  
+  .visually-hidden {
+    position: fixed;
+    transform: scale(0);
+  }
+  
+  .container {
+    --offset-container:14px;
+    
+    max-width: calc(1300px + var(--offset-container)*2);
+    padding: 0 var(--offset-container);
+    margin: 0 auto;
+  }
+
+  .svg-sprite{
+    display: none;
+
+  }
