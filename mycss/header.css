@@ -1,10 +1,40 @@
+.header{ 
+    position: fixed;
+    top: 24px;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
 .header__container{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;  
+    gap: 20px; 
+    align-items: center;
 }
 
-.header{ 
-    margin: 24px auto 35px;
+.header__logo{
+    width: 120px;    
 }
+
+.header__cart{
+    color: var(--dark);
+    border-bottom: solid 1px var(--blue);
+}
+
+.header__cart:focus{
+    border-color: var(--red);
+    color: var(--orange);
+}
+@media (max-width >= 540px){
+    .header{
+        top: 40px;
+        margin-bottom: 53px;/* ?*/
+    }
+    .header__logo{
+        width: 164px;
+    }
+  }
+
+  @media (max-width >= 860px) {
+    
+  }

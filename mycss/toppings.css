@@ -1,5 +1,5 @@
 .toppings{
-    padding: 24px;
+    padding: 24px 0;
 }
 
 .toppings__title{
@@ -10,14 +10,15 @@
 .toppings__button{
     font-weight: 600;
     font-size: 18px;
-    line-height: 1.4;
     color:var(--dark);
+
     display: flex;
     gap: 4px;
     align-items: center;
 }
  .toppings__arrow{
-   transform: 0.3s easy;
+   transition:transform 0.3s ease;
+   
  }
 
  .toppings__button_active .toppings__arrow{
@@ -27,16 +28,73 @@
  .toppings__list{
     display: none;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 8px;  
+    transition: 0.3s ease;
     max-height: 0;
     overflow: hidden;
-    transform: max-height 0.3s ease;
+    /*TODO */
  }
  .toppings__list_show{
     display: flex;
+    /*TODO */
+
  }
 
  .toppings__checkbox{
     position: absolute;
-    appearance: none;
+    appearance: none;/*скрывать чекбоксы инпуты*/
+    
  }
+ .toppings__label{
+   display: block;
+   border-radius: 32px;
+   padding: 8px 24px;
+   font-weight: 400;
+   font-size: 14px; 
+   color: var(--beige);
+   background: var(--white);
+   border: solid 1px transparent;
+ }
+ .toppings__checkbox:checked+ .toppings__label{
+   background-color: var(--orange);
+   color:var(--light);
+ }
+ .toppings__checkbox:focus-visible+ .toppings__label{
+   background-color: var(--white);
+   color:var(--orange);
+   border-color: var(--orange);
+ }
+
+ @media (width >=620px){
+      .toppings{
+      padding: 32px 0;
+  }
+
+  .toppings__button{
+      font-size: 24px;
+  }
+
+  .toppings__label{
+    font-size: 20px;
+  }
+}
+
+
+@media (width >=860px){
+  .toppings__button{
+    display:none;
+  }
+  .toppings__list{
+    display: flex;
+    max-height: none;
+  }
+  
+  .toppings__title{
+    position: static;
+    transform: none;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+}

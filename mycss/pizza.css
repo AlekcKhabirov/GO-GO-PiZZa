@@ -1,11 +1,33 @@
+.pizza{
+    padding: 24px 0;
+}
+
 .pizza__list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 12px;
+    list-style-type: none;
 }
 
 .pizza__title{
     font-weight: 900;
     font-size: 28px;
     color: var(--dark);
+    line-height: 1;
+    margin-bottom: 24px;
+}
+@media (max-width >= 620px) {
+    .pizza{
+        padding: 64px 0;
+    }
+    .pizza__title{
+        font-size: 44px;
+    }
+    .pizza__list{
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+       gap: 16px;
+    }
+    
+}    @media (max-width >= 1140px) {
+        gap: 20px;
 }

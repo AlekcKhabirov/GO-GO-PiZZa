@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GO GO PiZZa -заказать пиццу</title>
     <link rel="stylesheet" href="main.css">
-
+    <script src="jsFolder/runJs.js" type="module"></script>
 </head>
 <body>
     <header class="header">
@@ -23,14 +23,13 @@
     <main>
         <section class="hero">
             <div class="container hero__container">
-                <div class="hero content">
+                <div class="hero__content">
                     <h1 class="hero__title">
                         Лучшая пицца<br />в&nbsp;городе
                     </h1>
                     <div class="hero__delevery">
-                        <img src="./images/delevery.svg" alt="пункт доставки" class="hero__delevery__logo">
                         
-                        <p class="hero__delevery__description">Доставим менее чем за&nbsp;час</p>
+                        <p class="hero__delevery_description">Доставим менее чем за&nbsp;час</p>
                     </div>
                     
                     <button class="hero__button" type="button">
@@ -42,9 +41,9 @@
    
         <section class="toppings ">
             <div class="container">
-
                 <h2 class="toppings__title">Выбрать топпинг:</h2>
-                <button class="toppings__button toppings__button_active">
+
+                <button class="toppings__button ">
                     <span>Выбрать топпинг</span>
 
                     <svg version="1.1" viewBox="0 0 14.46 8.11" class="svg-icon svg-fill readmore__loader" style="width: 10px; height: 10px;">
@@ -52,15 +51,15 @@
                     </svg>
                 </button>
 
-                <ul class="toppings__list toppings__list_show">                                                        
+                <ul class="toppings__list">                                                        
                     <li class="toppings__item">
-                        <input class="toppings__checkbox" type="checkbox" id="topping" name="Твердый сыр" checked />
-                        <label class="toppings__lable" for="topping">Твердый сыр</label>
+                        <input class="toppings__checkbox" type="checkbox" id="one"name='topping' value="Твердый сыр" />
+                        <label class="toppings__label" for="one">Твердый сыр</label>
                     </li>
 
                     <li class="toppings__item">
-                        <input class="toppings__checkbox" type="checkbox" id="topping1" name="Твердый сыр" checked />
-                        <label class="toppings__lable" for="topping1">Твердый сыр</label>
+                        <input class="toppings__checkbox" type="checkbox" id="two"name='topping' value="Твердый сыр" />
+                        <label class="toppings__label" for="two">Твердый сыр</label>
                     </li>
                     
                 </ul>
@@ -70,42 +69,44 @@
         <section class="pizza">
             <div class="container">
                 <h2 class="pizza__title">Пицца</h2>
+
                 <div class="pizza__list">
-                    <article class="card"> 
-                        <img src="./images/cheesee-pizza-only-cheese-view-from-above-without-.png" alt="Маргарита" class="pizza__image">
+                    <li class="pizza__item">
+                        <article class="card"> 
+                            <div class="card__content"><div class="card__image"></div>
+                                
+                                <h3 class="card__title">Маргарита</h3>
 
-                        <div class="card__content">
-                            <h3 class="card__title">Маргарита</h3>
+                                <div class="card__info">
+                                    <span class="card__price">480р.</span>
 
-                            <div class="card__info">
-                                <span class="card__price">480р.</span>
+                                    <span >/</span>
 
-                                <span >/</span>
-
-                                <span class="card__weigth">25см.</span>
+                                    <span class="card__weigth">25см.</span>
+                                </div>
+                           
+                                <button class="card__button" type="button" name="Выбрать">Выбрать</button> 
                             </div>
-                        </div>
-    
-                        <button class="card__button" type="button" name="Выбрать">Выбрать</button>
-                    </article>
+                        </article>
+                    </li>
+                    <li class="pizza__item">
+                        <article class="card"><div class="card__image"></div>
+                            <div class="card__content">
+                                
+                                <h3 class="card__title">Маргарита</h3>
 
-                    <article class="card"> 
-                        <img src="./images/cheesee-pizza-only-cheese-view-from-above-without-.png" alt="Маргарита" class="pizza__image">
+                                <div class="card__info">
+                                    <span class="card__price">480р.</span>
 
-                        <div class="card__content">
-                            <h3 class="card__title">Маргарита</h3>
+                                    <span >/</span>
 
-                            <div class="card__info">
-                                <span class="card__price">480р.</span>
-
-                                <span >/</span>
-
-                                <span class="card__weigth">25см.</span>
+                                    <span class="card__weigth">25см.</span>
+                                </div>
+ 
+                                <button class="card__button" type="button" name="Выбрать">Выбрать</button> 
                             </div>
-                        </div>
-    
-                        <button class="card__button" type="button" name="Выбрать">Выбрать</button>
-                    </article>
+                        </article>
+                    </li>
                 </div>
             </div>
         </section>
@@ -127,25 +128,6 @@
                 </ul>
             </div>    
         </div>
-    </footer>
-    <script>
-        const toppingsButton=document.querySelector('.toppings__button');
-        const toppingsList=document.querySelector('.toppings__list');
-        
-        toppingsButton.addEventListener('click',()=>{
-            if(!toppingsList.classList.contains('toppings__list_show')){
-                toppingsList.classList.add('.toppings__list_show');
-                toppingsButton.classList.add('.toppings__button_active');
-                
-                //toppingsList.style.maxHeight =toppingsList.scrollHeight+'px';
-            }
-            else{
-                toppingsButton.classList.remove('.toppings__button_active');
-                //toppingsList.style.maxHeight=null;
-
-                setTimeout(()=>{toppingsList.classList.remove('toppings__list_show')},300);
-            }
-        });
-    </script>   
+    </footer>  
 </body>
 </html>

@@ -1,26 +1,57 @@
- .hero {
+ .hero__container{ position: relative;
+   
+    background-image: linear-gradient(47deg, #eb8a14 0%, #ecd55a 100%);
+    border-radius: 0 0 16px 16px;
+    padding-top: 80px;
+    padding-bottom: 212px;
+    margin-bottom: 43px;
+    
+}
+.hero__container:after{
+    content: '';
+    background-image: url(../images/cheese-slice-of-pizza-stretches-cheese\ 1.png);
+    background-repeat:no-repeat;
+    position: absolute;
+    z-index: 2;
+    bottom: -43px;
+    max-width: 382px;
+    max-height: 337px;
+    width: calc(100vw/(320/ 261));
+    height: calc(100vw/(320/ 230));
+    background-size: contain;
+    right: 21px;
+    /*right:calc(var(--offset-container)+7px) ;*/
+}
+
+.hero__content{
+    position: relative;
+    z-index: 4;
     display: flex;
     flex-direction: column;
-   margin-bottom: 213px;
-   margin-left: 0;
+
+    max-width: 300px;
+    left: 0;
 }
 
 .hero__title{
     font-size: 38px;
     font-weight: 900;
+    line-height: 1;
+    color: var(--dark);
     margin-bottom: 12px;
 }
 
 .hero__delevery{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+    background-image: url(../images/delevery.svg);
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
-.hero__delevery__description{
+.hero__delevery_description{
     font-size: 14px;
+    color: var(--dark);
+    padding-left: 32px;
     
 }
 .hero__button{
@@ -29,9 +60,98 @@
     background-color: var(--light);
     color: var(--orange);
     padding: 8px 24px;
+    width: 109px;
     border: solid 1px var(--dark);
     border-radius: 32px;
-
-    width: 109px;
-height: 36px
 } 
+.hero__button:focus{
+
+    border-color:var(--red);
+}
+
+@media (max-width >= 540px){
+
+    
+   
+    .hero__content{
+        max-width: 544px;
+
+    }
+    .hero__button{
+        width: 135px;
+        font-size: 20px;
+
+    }
+    .hero__title{
+        font-size: 64px;
+        margin-bottom: 24px;
+        color: blue;
+    }
+    .hero__delevery{   
+        margin-bottom: 50px;    
+    }
+    .hero__delevery_description{
+        font-size: 20px;
+    }
+   .hero__container{ 
+        padding: 116px 0 90px;
+        border-radius: 0 0 32px 32px;
+        margin-bottom: 60px;
+    }
+    .hero__container:after{
+        bottom: -60px;
+        right: 50px;
+        
+        max-width: 382px;
+        max-height: 337px;
+         /*подумать margin-right:calc(var(--offset-container)+10px);*/
+         
+    }
+  }
+  @media (max-width >= 860px) {
+    .hero__container{ 
+        padding: 140px 0 100px;
+        margin-bottom: 87px;
+    }
+    .hero__content{
+        max-width: 544px;
+    }
+
+    .hero__title{
+        font-size: 80px;
+        color: chartreuse;
+    }
+    .hero__delevery{
+        margin-bottom: 64px;
+    }
+   
+    .hero__container:after{
+        background-image: url(../images/cheese-slice-pizza-1024.png);
+        bottom: -87px;
+        right: 33px;    
+        max-width: 566px;
+        max-height: 499px;
+        /*width: calc(100vw/(1024/ 566));
+        height: calc(100vw/(1024/ 499));  подумать right:calc(var(--offset-container)-7px);*/
+    }
+  } 
+  @media (max-width >=1040px) {
+    .hero__container{
+        padding: 140px 0 100px;
+    }
+    .hero__content{
+        max-width: 593px;
+    }
+    .hero__title{
+        margin-bottom: 24px;
+    }
+    .hero__delevery{
+        margin-bottom: 64px;
+    }
+    .hero__container:after{
+        max-width: 670px;
+        max-height: 591px;
+        right: 70px;
+    }
+    
+  }
